@@ -9,6 +9,7 @@ import { VideoPlayer } from '../components';
 
 
 
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -46,7 +47,7 @@ const Home = () => {
           </h3>
           <div className='flex gap-20 mt-10' >
             <ThemeProvider theme={theme}>
-              <Button size='large' variant="contained">Watch Now</Button>
+              <Button href='/movie/abc' size='large' variant="contained">Watch Now</Button>
               <Button size='large' variant="outlined" >
                 Watch Trailer
               </Button>

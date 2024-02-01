@@ -8,7 +8,7 @@ dotenv.config();
 app.use(cors());
 app.use(express.json())
 
-mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true, useUnifiedTopology: true, dbName: "cinema" 
+mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true, useUnifiedTopology: true, dbName: "GemCinema_timegreen" 
 })
 
 const moviesSchema = new mongoose.Schema({
