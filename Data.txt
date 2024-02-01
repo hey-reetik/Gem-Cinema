@@ -11,8 +11,3 @@ Watch Now:- E_Z9B2qRTeceT2If
 Trailer:- Eknnl_dphdZcmoAf
 
 
-MONGO_URL=mongodb+srv://ritik:SQsncBQ0mMhOvIbh@cinema.5jnbwhm.mongodb.net/
-PORT=5000
-BACKEND_URL=http://localhost:5000/
-AUTH_USER=kali@admin
-AUTH_PASS=kali@linux
