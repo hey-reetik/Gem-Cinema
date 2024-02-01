@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from 'react'
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-import Button from '@mui/material/Button';
-
-import YouTube from 'react-youtube';
 import { VideoPlayer } from '../components';
-
-
-
-
-
-const videoId = 'Yk2WmwXekQE';
-
-
+import { useParams } from 'react-router-dom';
    
 
 const Watch = () => {
- 
+
+  const [videoId,setVideoId] = useState(null);
+  const [bg,setBg] = useState('');
+  const {id} = useParams('id');
+
+useEffect(()=>{
+ fetch(`http://localhost:5000/movie/${id}`).then((res)=>{
+  res.json().then((data)=>{
+      setVideoId(data.movie_url)
+      setBg(data.bg_poster_url);
+  })
+ })
+},[])
 
   return (
     <>
-     <div className={`absolute h-screen w-screen  filter brightness-50 -z-10`}><img className='bg-cover bg-center object-cover w-full h-full ' src={"https://img.nowrunning.com/content/movie/2010/Kaalo/bg4.jpg"} alt="photo"  /></div>
+     <div className={`absolute h-screen w-screen  filter brightness-50 -z-10`}><img className='bg-cover bg-center object-cover w-full h-full ' src={`${bg}`} alt="photo"  /></div>
       <div className='flex justify-center items-center h-screen' >
          <VideoPlayer videoId={videoId} />
       </div>

@@ -25,7 +25,7 @@ const Home = () => {
   const [movieData,setMovieData] = useState({});
   
   useEffect(()=>{
-    fetch("http://localhost:5000/movies",{
+    fetch("http://localhost:5000/top_movies",{
       method:'GET',
     }).then((response)=>{
       response.json().then((data)=>{
@@ -47,7 +47,7 @@ const Home = () => {
           </h3>
           <div className='flex gap-20 mt-10' >
             <ThemeProvider theme={theme}>
-              <Button href='/movie/abc' size='large' variant="contained">Watch Now</Button>
+              <Button href={`/movie/${movieData._id}` }size='large' variant="contained">Watch Now</Button>
               <Button size='large' variant="outlined" >
                 Watch Trailer
               </Button>
