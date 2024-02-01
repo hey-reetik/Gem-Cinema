@@ -1,4 +1,5 @@
-import {Home,Watch, Movies, About} from '@containers/index'
+import {Watch} from '@containers/index';
+import { Home } from './containers';
 import './App.css';
 import {Navbar } from '@components/index'
 import { Route,Routes, BrowserRouter as Router } from 'react-router-dom';
