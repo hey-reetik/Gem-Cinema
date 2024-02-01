@@ -21,8 +21,8 @@ const Home = () => {
     <div className="flex justify-center items-center h-screen gap-20 bg-[url('@assets/bg.jpg')] bg-cover bg-center bg-opacity-50 filter brightness-50 " >
         
       <div className='flex flex-col p-20 md:w-9/12 '>
-        <h1 className='font-bold text-8xl' >Wakanda Forever</h1>
-        <h3 className='font-bold text-lg mt-5 ' >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sunt tenetur animi fugiat sit quidem, fuga architecto <br></br>blanditiis reprehenderit repellat totam quos fugit corporis enim aliquid amet, quasi harum nostrum.
+        <h1 className='font-bold text-8xl text-stone-50 ' >Wakanda Forever</h1>
+        <h3 className='font-bold text-lg mt-5 text-stone-50' >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sunt tenetur animi fugiat sit quidem, fuga architecto <br></br>blanditiis reprehenderit repellat totam quos fugit corporis enim aliquid amet, quasi harum nostrum.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quisquam provident distinctio facere fuga ea autem incidunt! Incidunt assumenda, ratione eveniet, laborum neque, consectetur distinctio quos totam ipsum reprehenderit quod!
         </h3>
         <div className='flex gap-20 mt-10' >
