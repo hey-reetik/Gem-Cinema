@@ -17,8 +17,8 @@ const theme = createTheme({
 const Home = () => {
   return (
   <>
-   
-    <div className="flex justify-center items-center h-screen gap-20 bg-[url('@assets/bg.jpg')] bg-cover bg-center bg-opacity-50 filter brightness-50 " >
+   <div className="absolute h-screen w-screen bg-[url('@assets/bg.jpg')] bg-cover bg-center filter brightness-50 -z-10"></div>
+    <div className="flex justify-center items-center h-screen gap-20  z-20   " >
         
       <div className='flex flex-col p-20 md:w-9/12 '>
         <h1 className='font-bold text-8xl text-stone-50 ' >Wakanda Forever</h1>
