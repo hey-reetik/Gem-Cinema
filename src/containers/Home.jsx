@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <>
-      <div className={`absolute h-screen w-screen bg-[url('${movieData.bg_poster_url}')] bg-cover bg-center filter brightness-50 -z-10`}></div>
+      <div className={`absolute h-screen w-screen  filter brightness-50 -z-10`}><img className='bg-cover bg-center object-cover w-full h-full ' src={`${movieData.bg_poster_url}`} alt="photo"  /></div>
       <div className="flex justify-center items-center h-screen gap-20  z-20   " >
 
         <div className='flex flex-col p-20 md:w-9/12 '>
