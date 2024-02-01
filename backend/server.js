@@ -26,7 +26,7 @@ const movies = mongoose.model('Movies',moviesSchema);
 app.get('/movies',async(req,res)=>{
    await movies.find({}).then((data)=>{
     if(data && data.length !== 0){
-        res,send(data).status(200);
+        res.send(data).status(200);
        }else{
         res.send("No Data Found").status(404);
        }
