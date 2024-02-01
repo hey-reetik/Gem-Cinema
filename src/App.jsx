@@ -4,7 +4,6 @@ import {Navbar } from '@components/index'
 import { Route,Routes, BrowserRouter as Router } from 'react-router-dom';
 function App() {
 
-
   return (
     <Router>
       <>
