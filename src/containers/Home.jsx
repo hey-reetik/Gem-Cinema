@@ -18,7 +18,7 @@ const Home = () => {
   return (
   <>
    
-    <div className='flex justify-center items-center h-screen gap-20 ' >
+    <div className="flex justify-center items-center h-screen gap-20 bg-[url('@assets/bg.jpg')] bg-cover bg-center " >
         
       <div className='flex flex-col p-20 md:w-9/12 '>
         <h1 className='font-bold text-8xl' >Wakanda Forever</h1>
